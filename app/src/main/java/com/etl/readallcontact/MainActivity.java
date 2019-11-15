@@ -50,11 +50,11 @@ public class MainActivity extends AppCompatActivity {
                 List<ContactData> contactDatas  = new ContactsGetterBuilder(this)
                         .onlyWithPhones().buildList();
 
-              /*  adapter = new RecyclerViewAdapter(MainActivity.this,contactDatas);
+                adapter = new RecyclerViewAdapter(MainActivity.this,contactDatas);
                 recyclerView.setLayoutManager(new LinearLayoutManager(MainActivity.this));
                 recyclerView.setAdapter(adapter);
 
-                adapter.notifyDataSetChanged();*/
+                adapter.notifyDataSetChanged();
 
 
                 //  Toast.makeText(this, ""+contactData, Toast.LENGTH_LONG).show();

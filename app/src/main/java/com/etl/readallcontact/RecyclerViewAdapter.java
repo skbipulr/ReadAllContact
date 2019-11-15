@@ -37,7 +37,7 @@ public class RecyclerViewAdapter extends RecyclerView.Adapter<RecyclerViewAdapte
     public void onBindViewHolder(@NonNull ViewHolderContact holder, int position) {
         final ContactData contacts = contactDatas.get(position);
 
-        String phone = contacts.getPhoneList().get(position).getMainData();
+        String phone = contacts.getPhoneList().get(0).getMainData();
         String name = contacts.getCompositeName().toString();
 
         holder.nameTv.setText(name);
